@@ -89,8 +89,11 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (4.1.0)
     nio4r (2.0.0)
+    nokogiri (1.7.0.1)
+      mini_portile2 (~> 2.1.0)
     nokogiri (1.7.0.1-x64-mingw32)
       mini_portile2 (~> 2.1.0)
+    pg (0.20.0)
     pg (0.20.0-x64-mingw32)
     puma (3.8.2)
     rack (2.0.1)
@@ -159,6 +162,7 @@ GEM
     websocket-extensions (0.1.2)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
