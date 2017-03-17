@@ -11,4 +11,4 @@ set :use_sudo, false
 set :conditionally_migrate, true
 set :passenger_restart_with_touch, false
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system'
-# append :linked_files, 'config/database.yml', 'config/secrets.yml'
+append :linked_files, '.env'
