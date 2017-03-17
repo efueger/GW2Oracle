@@ -16,3 +16,4 @@ test:
 production:
   <<: *default
   database: gw2oracle
+  username: gw2
