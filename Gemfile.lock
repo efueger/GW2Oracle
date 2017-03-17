@@ -143,7 +143,6 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  byebug
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   jquery-rails
