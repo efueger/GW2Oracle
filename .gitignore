@@ -22,3 +22,6 @@
 
 # Ignore IntelliJ IDEA configuration files
 .idea
+
+# Ignore .env
+.env

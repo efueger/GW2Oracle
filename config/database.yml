@@ -17,3 +17,4 @@ production:
   <<: *default
   database: gw2oracle
   username: gw2
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
