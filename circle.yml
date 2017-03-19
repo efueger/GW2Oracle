@@ -1,0 +1,10 @@
+machine:
+  timezone: America/Los_Angeles
+  ruby:
+    version: 2.3.3
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - cap production deploy
