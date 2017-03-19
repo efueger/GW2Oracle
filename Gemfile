@@ -43,6 +43,7 @@ end
 group :development, :test do
 	gem 'rspec-rails', '~> 3.5'
 	gem 'rspec-collection_matchers'
+	gem 'rspec_junit_formatter'
 	gem 'simplecov'
 	gem 'brakeman'
 end
