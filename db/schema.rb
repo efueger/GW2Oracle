@@ -10,9 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20170319010532) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "consumables", force: :cascade do |t|
+    t.string   "consumable_type", null: false
+    t.string   "name"
+    t.string   "description"
+    t.integer  "duration"
+    t.string   "unlock_type"
+    t.integer  "color_id"
+    t.integer  "recipe_id"
+    t.integer  "apply_count"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "items", force: :cascade do |t|
+    t.string   "name",                     null: false
+    t.string   "icon",                     null: false
+    t.string   "description"
+    t.string   "item_type",                null: false
+    t.string   "rarity",                   null: false
+    t.integer  "level",        default: 0
+    t.integer  "vendor_value", default: 0
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.integer  "details_id"
+    t.string   "details_type"
+  end
 
 end
