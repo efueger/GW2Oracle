@@ -35,6 +35,8 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   # Use Capistrano for deployment
 	gem 'capistrano'
+  gem 'capistrano-rvm'
+  gem 'capistrano-passenger'
 	gem 'capistrano-rails'
 end
 
